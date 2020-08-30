@@ -116,5 +116,8 @@
     "webpack-merge": "^1.0.2",
     "yargs": "^6.5.0"
   },
-  "dependencies": {}
+  "dependencies": {
+    "plotly.js": "^1.54.7",
+    "react-plotly.js": "^2.4.0"
+  }
 }
