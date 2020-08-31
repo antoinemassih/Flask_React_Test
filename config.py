@@ -6,7 +6,7 @@ from setup import basedir
 class BaseConfig(object):
     SECRET_KEY = "SO_SECURE"
     DEBUG = True
-    SQLALCHEMY_DATABASE_URI = "postgresql://postgres:admin@localhost:5432/Flask_app"
+    SQLALCHEMY_DATABASE_URI = "postgresql://postgres:Monkeyhero69@trendchart.cu0jwgiytj6k.us-east-1.rds.amazonaws.com:5432/trendchart"
     SQLALCHEMY_TRACK_MODIFICATIONS = True
 
 
