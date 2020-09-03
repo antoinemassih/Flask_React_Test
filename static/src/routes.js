@@ -10,6 +10,7 @@ import LoginView from './components/LoginView';
 import RegisterView from './components/RegisterView';
 import ProtectedView from './components/ProtectedView';
 import plotlyComponent from './components/plotlyComponent';
+import testComponent from './components/testComponent';
 import NotFound from './components/NotFound';
 
 import { DetermineAuth } from './components/DetermineAuth';
@@ -23,6 +24,7 @@ export default (
         <Route path="register" component={requireNoAuthentication(RegisterView)} />
         <Route path="home" component={requireNoAuthentication(HomeContainer)} />
         <Route path="analytics" component={requireAuthentication(plotlyComponent)} />
+        <Route path="test" component={requireAuthentication(testComponent)} />
         <Route path="*" component={DetermineAuth(NotFound)} />
     </Route>
 );
